@@ -79,7 +79,8 @@ export default {
       links: [
         { icon: "mdi", text: "Dashboard", route: "/dashboard" },
         { icon: "folder", text: "Question", route: "/question" },
-        { icon: "person", text: "Reports", route: "/reports" }
+        { icon: "person", text: "Reports", route: "/reports" },
+        { icon: "person", text: "Company", route: "/createcompany" }
       ]
     };
   },

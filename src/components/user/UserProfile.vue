@@ -7,7 +7,7 @@
      <h4 class="headline mb-0"><b class="red--text">ID :</b> {{ user.name }}</h4>
      <div><img v-bind:src= user.photoUrl ></div>
 
-     <button class="btn btn-primary" @click.prevent="onLogout">LogOut</button>
+      <button class="btn btn-primary" @click.prevent="onLogout">LogOut</button>
      </div>
 
 </template>
@@ -15,14 +15,15 @@
 <script>
   export default {
     computed: {
-      user () {
-        return this.$store.getters.user
-      }
-    },
+       user () {
+         return this.$store.getters.user
+       }
+     },
     methods: {
         onLogout(){
             this.$store.dispatch('logout')
             this.$router.push('/')
+           
         }
     },
   }

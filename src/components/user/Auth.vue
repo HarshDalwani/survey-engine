@@ -2,7 +2,7 @@
 <form @submit.prevent="onSignin">
   <div class="container">
    <div class="col-sm-8 col-md-6">
-    <div class="form-group" v-if="isLoggedIn">
+    <div class="form-group">
     <label for="exampleInputEmail1" >Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" v-model="email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -55,9 +55,7 @@ export default {
        onSigninFacebook () {
         this.$store.dispatch('signUserInFacebook')
       },
-      isLoggedIn(user){
-
-      }
+    
       
      
   },
@@ -79,14 +77,7 @@ export default {
         }
       }
     },
-    // mounted() {
-    //   //  var ui =  firebaseui.auth.AuthUI()
-    //   ui.start("#firebaseui-auth-container",uiConfig);
-     
-      
-    // }
-    
-  
+   
     }
 
 

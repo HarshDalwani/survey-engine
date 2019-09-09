@@ -53,15 +53,7 @@ const actions = {
               
               }
               commit('setUser', newUser)
-           
-              
-
-
-
-
-
-
-              
+  
             }
           )
           .catch(
