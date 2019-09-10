@@ -4,20 +4,17 @@ import router from './router'
 
 import './helpers/firebaseConfig'
 import firebase from 'firebase'
-
-// import {config} from './helpers/firebaseConfig'
-// import * as firebaseui from 'firebaseui';
 import { firestorePlugin } from 'vuefire'
-// import axios from 'axios';
 
+import vueCountryRegionSelect from 'vue-country-region-select'
 import store from './store/store'
 
 
 Vue.config.productionTip = false
 
-// Vue.use(firebaseui);
 Vue.use(firestorePlugin);
-// Vue.use(axios);
+Vue.use(vueCountryRegionSelect);
+
 
 new Vue({
   router,
@@ -27,7 +24,6 @@ new Vue({
         this.$store.dispatch('autoSignIn', user)
         // this.$router.push('/success')
       } 
-      
     })
     
    },

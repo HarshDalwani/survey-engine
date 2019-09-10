@@ -15,21 +15,27 @@ const actions = {
   bindNames: firestoreAction(({ bindFirestoreRef }, payLoad) => {
     db.collection("names")
       .doc()
-      .set(payLoad.newItem);
+      .set(payLoad.newCompany);
 
     return bindFirestoreRef("names", db.collection("names"));
   }),
+
+  
   getbindNames: firestoreAction(context => {
     return context.bindFirestoreRef("names", db.collection("names"));
   }),
-  updatebindNames: firestoreAction(({ state },payLoad) => {
-    db.collection('names')
-      .doc(state.names.id)
-      .update({payLoad})
-      .then(() => {
-        console.log('user updated!')
-      })
-  })
+
+
+
+
+  // updatebindNames: firestoreAction(({ state },payLoad) => {
+  //   db.collection('names')
+  //     .doc(state.names.id)
+  //     .update({payLoad})
+  //     .then(() => {
+  //       console.log('user updated!')
+  //     })
+  // })
 };
 
 const getters = {
