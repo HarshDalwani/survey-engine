@@ -12,18 +12,7 @@
                                <div class="input-group"><span class="input-group-addon"><i class="mdi mdi-account-circle"></i></span><input id="fullName" name="fullName" placeholder="Company full name" class="form-control" required="true" value="" type="text" v-model="newCompany.companyName"></div>
                             </div>
                          </div>
-                         <!-- <div class="form-group">
-                            <label class="col-md-4 control-label">Address Line 1</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="mdi mdi-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label class="col-md-4 control-label">Address Line 2</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="mdi mdi-home"></i></span><input id="addressLine2" name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div> -->
+           
                          <div class="form-group">
                             <label class="col-md-4 control-label">Company type</label>
                             <div class="col-md-8 inputGroupContainer">
@@ -36,12 +25,7 @@
                                <div class="input-group"><span class="input-group-addon"><i class="mdi mdi-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text" v-model="newCompany.companyState"></div>
                             </div>
                          </div>
-                         <!-- <div class="form-group">
-                            <label class="col-md-4 control-label">Postal Code/ZIP</label>
-                            <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="mdi mdi-home"></i></span><input id="postcode" name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
-                            </div>
-                         </div> -->
+                     
                          <div class="form-group">
                             <label class="col-md-4 control-label">Country</label>
                              <div class="col-md-8 inputGroupContainer">
@@ -89,9 +73,6 @@ export default {
         companyState:"",
         companyEmail:"",
         companyPhone:""
-        
-
-        
       }
     };
   },
